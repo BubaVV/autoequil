@@ -1,0 +1,26 @@
+{
+  "name": "autoequil",
+  "version": "1.0.0",
+  "description": "Automated tool to run Equil software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm static/equil.jsdos; cp -r node_modules/js-dos/dist static/ ; zip -j static/equil.jsdos equil/* && cd bundle/ && zip -ru ../static/equil.jsdos .jsdos/*",
+    "serve": "node_modules/.bin/http-server static -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BubaVV/autoequil.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BubaVV/autoequil/issues"
+  },
+  "homepage": "https://github.com/BubaVV/autoequil#readme",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "js-dos": "^7.4.9"
+  }
+}
