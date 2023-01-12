@@ -20,7 +20,11 @@
   },
   "homepage": "https://github.com/BubaVV/autoequil#readme",
   "dependencies": {
+    "@types/node": "^18.11.18",
+    "emulators": "^0.73.8",
+    "fs": "^0.0.1-security",
     "http-server": "^14.1.1",
+    "jimp": "^0.16.2",
     "js-dos": "^7.4.9"
   }
 }

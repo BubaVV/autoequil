@@ -17,3 +17,8 @@ npm serve
 ```
 
 It installs all dependencies locally, builds jsdos bundle and start serving at http://127.0.0.1:8080 
+
+## Run as command-line app
+```bash
+node equil.js AlOx.txt
+```
