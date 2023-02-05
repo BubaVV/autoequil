@@ -20,5 +20,5 @@ It installs all dependencies locally, builds jsdos bundle and start serving at h
 
 ## Run as command-line app
 ```bash
-node equil.js AlOx.txt
+node equil.js equil/AlOx.txt 0.1 0.1 0.1
 ```
