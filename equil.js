@@ -152,8 +152,8 @@ if (input_concs.length != ans.primary_comps_number) {
 }
 
 const bundle = build_bundle(ans);
-run_equil(input_concs, bundle).then(async (output) => {
-    ans['equil'] = await output;
+run_equil(input_concs, bundle).then((output) => {
+    ans['equil'] = output;
     ans['equil']['primary_concs'] = input_concs;
     console.log(JSON.stringify(ans));
 })
