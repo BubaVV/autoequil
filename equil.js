@@ -96,8 +96,8 @@ function build_bundle(data){
 }
 
 function parse_answers(data){
-    const CONC_REGEX = /c\[\s*\d*\]=\d\.\d{3}e-?\d{2}/g; // c[ 4]=6.387e-02
-    const BUFFER_REGEX = /p\s*=\s*\d\.\d{3}e-?\d{2}/; // p = 6.493e-02
+    const CONC_REGEX = /c\[\s*\d*\]=-?\d\.\d{3}e[\+-]\d{2}/g; // c[ 4]=6.387e-02
+    const BUFFER_REGEX = /p\s*=\s*-?\d\.\d{3}e[\+-]\d{2}/; // p = 6.493e-02
 
     const buffer = Number(data.match(BUFFER_REGEX)[0].split('=')[1]);
     const concs_str = data.match(CONC_REGEX);

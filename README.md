@@ -12,8 +12,8 @@ and deploys tool as simple web application and as library for further integratio
 ## Installation
 ```bash
 npm install
-npm build
-npm serve
+npm run build
+npm run serve
 ```
 
 It installs all dependencies locally, builds jsdos bundle and start serving at http://127.0.0.1:8080 
